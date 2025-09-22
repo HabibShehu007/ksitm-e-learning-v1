@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KSITM Onboarding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="./Css/styles.css" rel="stylesheet">
+  <script src="./Js/script.js"></script>
+</head>
+<body>
+
+<!-- Step 1: Welcome -->
+<div class="step active" id="step1" style="background: radial-gradient(circle at top left, #6a11cb, #2575fc); color: white;">
+  <img src="./images/ksitm logo.png" alt="KSITM Logo" class="logo">
+  <h1 class="display-4 fw-bold">Welcome to KSITM E-Learning Platform</h1>
+  <p class="lead mb-4">Empowering Innovation Through <strong>Technology</strong> & <strong>Management</strong></p>
+  <button class="btn btn-light pulse" onclick="nextStep(2)">Get Started</button>
+</div>
+
+<!-- Step 2: Highlights -->
+<div class="step" id="step2" style="background: radial-gradient(circle at bottom right, #ff6a00, #ee0979); color: white;">
+  <h2 class="mb-4">Why Choose KSITM?</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card bg-light text-dark shadow-lg p-4 highlight-card">
+          <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Virtual Diplomas</h5>
+          <p>Study from anywhere with our tech-powered diploma programs.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card bg-light text-dark shadow-lg p-4 highlight-card">
+          <i class="fas fa-briefcase fa-3x text-success mb-3"></i>
+          <h5 class="fw-bold">Career-Focused</h5>
+          <p>Programs designed to launch you into the workforce with confidence.</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card bg-light text-dark shadow-lg p-4 highlight-card">
+          <i class="fas fa-network-wired fa-3x text-warning mb-3"></i>
+          <h5 class="fw-bold">Tech-Driven Learning</h5>
+          <p>Modern tools and platforms to keep you ahead in the digital age.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mt-4">
+      <button class="btn btn-outline-light me-2" onclick="nextStep(1)">Back</button>
+      <button class="btn btn-light pulse" onclick="nextStep(3)">Next</button>
+    </div>
+  </div>
+</div>
+
+<!-- Step 3: Get Started -->
+<div class="step" id="step3" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white;">
+  <h2 class="mb-3 fw-bold">Ready to Begin?</h2>
+  <p class="lead mb-4">Create your account and start your journey with KSITM.</p>
+  <div>
+    <button class="btn btn-outline-light me-2" onclick="nextStep(2)">Back</button>
+    <a href="./Pages/signup.html" class="btn btn-light pulse" onclick="showLoader()">Proceed to Signup</a>
+
+  </div>
+</div>
+</body>
+</html>

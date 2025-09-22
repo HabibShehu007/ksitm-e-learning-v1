@@ -1,0 +1,9 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Ignore Font Awesome assets
+public/fontawesome-free-7.0.0-web/
+
