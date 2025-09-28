@@ -16,14 +16,24 @@ exports.signup = (req, res) => {
 exports.login = (req, res) => {
   const { email, password } = req.body;
   db.query('SELECT * FROM users WHERE email = ?', [email], (err, results) => {
-    if (err || results.length === 0) return res.status(401).send('Invalid credentials');
+    if (err || results.length === 0) {
+      return res.status(401).json({ message: 'Invalid credentials' }); // ✅ JSON response
+    }
+
     bcrypt.compare(password, results[0].password, (err, match) => {
       if (match) {
         req.session.user = results[0];
-        res.status(200).send('Login successful');
+
+        // ✅ Send structured JSON for frontend
+        res.status(200).json({
+          name: results[0].name,
+          email: results[0].email,
+          message: `Welcome back, ${results[0].name}!`
+        });
       } else {
-        res.status(401).send('Invalid credentials');
+        res.status(401).json({ message: 'Invalid credentials' }); // ✅ JSON response
       }
     });
   });
 };
+

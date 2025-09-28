@@ -1,4 +1,3 @@
-// public/js/login.js
 document.querySelector('form').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -17,13 +16,16 @@ document.querySelector('form').addEventListener('submit', async (e) => {
       body: JSON.stringify({ email, password })
     });
 
-    const text = await res.text();
+    const data = await res.json(); // Expecting { name, email, message }
+
     if (res.ok) {
-      sessionStorage.setItem('ksitmUser', email);
-      showModal('success', text);
+      // Store user info in sessionStorage
+      sessionStorage.setItem('userName', data.name || 'User');
+      sessionStorage.setItem('userEmail', data.email);
+      showModal('success', data.message || 'Login successful!');
       setTimeout(() => window.location.href = 'dashboard.html', 2000);
     } else {
-      showModal('error', text);
+      showModal('error', data.message || 'Login failed.');
     }
   } catch (err) {
     showModal('error', 'Something went wrong.');

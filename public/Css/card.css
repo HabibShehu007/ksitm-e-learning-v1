@@ -1,0 +1,35 @@
+/* Card Styling */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
