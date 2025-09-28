@@ -58,3 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCourseReveal();
   setupCourseModals();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const message = localStorage.getItem('adminReply');
+  const badge = document.getElementById('messageBadge');
+  if (!message) {
+    badge.style.display = 'none';
+  }
+});
