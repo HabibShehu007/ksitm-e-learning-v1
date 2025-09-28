@@ -1,0 +1,25 @@
+/* Hero Section */
+#hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  font-weight: 600;
+}
+
+#exploreBtn {
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+#userGreeting span,
+#userEmailDisplay span {
+  font-weight: 700;
+}

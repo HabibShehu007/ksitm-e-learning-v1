@@ -1,33 +1,32 @@
-/* Gradient Hero Section */
+/* Hero Section */
 section.bg-light {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: #f8f9fa;
+  background-color: #f8f9fa;
+  color: #212529;
   padding: 3rem 0;
 }
 
 #heroGreeting {
   font-size: 2.75rem;
   font-weight: 700;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #0d6efd;
 }
 
 #heroDescription {
   font-size: 1.25rem;
   font-weight: 500;
-  color: #e0e0e0;
+  color: #495057;
   margin-top: 0.75rem;
   line-height: 1.6;
 }
 
 #selectedCourse {
-  background: linear-gradient(to right, #ff6a00, #ee0979);
+  background-color: #0d6efd;
   color: #fff;
   border-radius: 20px;
   padding: 10px 20px;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Form Styling */
@@ -35,12 +34,12 @@ form {
   background-color: #ffffff;
   padding: 2.5rem;
   border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
 }
 
 .form-label {
   font-weight: 600;
-  color: #333;
+  color: #212529;
 }
 
 .form-control {
@@ -53,7 +52,7 @@ textarea.form-control {
 }
 
 .btn-primary {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background-color: #0d6efd;
   border: none;
   border-radius: 30px;
   padding: 12px 28px;
@@ -63,7 +62,7 @@ textarea.form-control {
 }
 
 .btn-primary:hover {
-  background: linear-gradient(to right, #2a5298, #1e3c72);
+  background-color: #0b5ed7;
   transform: translateY(-2px);
 }
 
@@ -71,10 +70,10 @@ textarea.form-control {
 .modal-content {
   border-radius: 16px;
   padding: 2rem;
-  background: linear-gradient(to right, #ff6a00, #ee0979);
+  background-color: #0d6efd;
   color: #fff;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .modal-title {

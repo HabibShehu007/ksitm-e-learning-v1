@@ -1,0 +1,33 @@
+/* Profile Avatar */
+img.rounded-circle {
+  border: 4px solid #0d6efd;
+}
+
+/* Info Card */
+.card-title {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+a.text-primary:hover {
+  color: #0b5ed7;
+  text-decoration: underline;
+}
+
+.default-avatar {
+  width: 120px;
+  height: 120px;
+  background-color: #adb5bd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+

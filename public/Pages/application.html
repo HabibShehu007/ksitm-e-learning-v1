@@ -30,36 +30,50 @@
 <section class="py-5">
   <div class="container">
     <form id="applicationForm">
-      <div class="row g-3">
-        <div class="col-md-6">
-          <label class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="fullName" required>
-        </div>
-        <div class="col-md-6">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="col-md-6">
-          <label class="form-label">Phone</label>
-          <input type="tel" class="form-control" required>
-        </div>
-        <div class="col-md-6">
-          <label class="form-label">Preferred Start Date</label>
-          <input type="date" class="form-control" required>
-        </div>
-        <div class="col-12">
-          <label class="form-label">Address</label>
-          <input type="text" class="form-control" required>
-        </div>
-        <div class="col-12">
-          <label class="form-label">Why are you applying?</label>
-          <textarea class="form-control" rows="4" required></textarea>
-        </div>
-      </div>
-      <div class="mt-4 text-end">
-        <button type="submit" class="btn btn-primary px-4">Submit Application</button>
-      </div>
-    </form>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="fullName" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Date of Birth</label>
+      <input type="date" class="form-control" id="dob" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Gender</label>
+      <select class="form-select" id="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Preferred Start Date</label>
+      <input type="date" class="form-control" id="startDate" required>
+    </div>
+    <div class="col-12">
+      <label class="form-label">Address</label>
+      <input type="text" class="form-control" id="address" required>
+    </div>
+    <div class="col-12">
+      <label class="form-label">Why are you applying?</label>
+      <textarea class="form-control" id="motivation" rows="4" required></textarea>
+    </div>
+  </div>
+  <div class="mt-4 text-end">
+    <button type="submit" class="btn btn-primary px-4">Submit Application</button>
+  </div>
+</form>
+
   </div>
 </section>
 
